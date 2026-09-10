@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import { SITE_CONFIG } from '@/data/experiences';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -12,6 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_CONFIG.url),
   title: {
     default: 'Paradise Sup&Surf | Escola de Surf & Experiências de Natureza no Rio de Janeiro',
     template: '%s | Paradise Sup&Surf',

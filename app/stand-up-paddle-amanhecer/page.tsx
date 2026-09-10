@@ -17,7 +17,7 @@ export default function SupAmanhecerPage() {
         kicker="Paz, Natureza & Conexão"
         title="Stand Up Paddle no Amanhecer Carioca"
         subtitle="Uma experiência contemplativa pensada para desacelerar. O mar calmo como um espelho e os tons dourados do nascer do sol criam uma percepção única da cidade maravilhosa."
-        imageSrc="https://images.unsplash.com/photo-1601283261983-543e77949437?auto=format&fit=crop&w=1800&q=80"
+        imageSrc="/images/stand-up-paddle-amanhecer.jpg"
         imageAlt="Silhueta de pessoa em stand up paddle sobre água calma e dourada ao entardecer"
         badgeClass="bg-paradise-orange/90 text-white"
         ctaHref={getWhatsAppLink("Olá! Quero saber as próximas datas e vagas para a remada de SUP ao amanhecer.")}

@@ -17,7 +17,7 @@ export default function TourCulturalPage() {
         kicker="Cultura & Identidade Viva"
         title="Tour Cultural pela Comunidade: O Outro Lado do Rio"
         subtitle='Uma experiência legítima, respeitosa e transformadora. Nosso objetivo não é "visitar a favela", mas sim valorizar a história de luta, as pessoas, a culinária, os artistas locais e mirantes privilegiados.'
-        imageSrc="https://images.unsplash.com/photo-1701204290431-63468bf3351c?auto=format&fit=crop&w=1800&q=80"
+        imageSrc="/images/tour-cultural-comunidade.jpg"
         imageAlt="Vista aérea de comunidade no morro cercada pela Mata Atlântica no Rio de Janeiro"
         badgeClass="bg-paradise-rose/90 text-white"
         ctaHref={getWhatsAppLink("Olá! Gostaria de entender mais detalhes e agendar o Tour Cultural pela Comunidade.")}

@@ -17,7 +17,7 @@ export default function TrilhasPage() {
         kicker="Mata Atlântica & Aventura"
         title="Trilhas Panorâmicas: O Rio Visto de Cima"
         subtitle="Uma combinação revigorante de atividade física, ar puro e a recompensa de chegar ao cume com vistas panorâmicas de 360° do oceano e da floresta."
-        imageSrc="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1800&q=80"
+        imageSrc="/images/trilhas-e-mirantes.jpg"
         imageAlt="Vista aérea da Baía de Guanabara e Pão de Açúcar no Rio de Janeiro"
         badgeClass="bg-paradise-forest/90 text-white"
         ctaHref={getWhatsAppLink("Olá! Gostaria de consultar os roteiros e datas das trilhas no Rio.")}

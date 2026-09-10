@@ -17,7 +17,7 @@ export default function PraiasSecretasPage() {
         kicker="Fora do Roteiro Óbvio"
         title="Expedição Praias Secretas & Reservadas"
         subtitle="Esqueça as praias lotadas. Conduzimos você até enseadas paradisíacas e recantos protegidos da costa do Rio que a imensa maioria dos turistas nunca teve a oportunidade de pisar."
-        imageSrc="https://images.unsplash.com/photo-1541417904950-b855846fe074?auto=format&fit=crop&w=1800&q=80"
+        imageSrc="/images/praias-secretas.jpg"
         imageAlt="Vista aérea de praia deserta com coqueiro e mar turquesa"
         ctaHref={getWhatsAppLink("Olá! Gostaria de consultar as opções de roteiro para as Praias Secretas no Rio.")}
         ctaLabel="Consultar Expedição Secreta"

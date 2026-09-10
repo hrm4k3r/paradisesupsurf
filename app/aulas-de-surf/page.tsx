@@ -17,7 +17,7 @@ export default function AulasDeSurfPage() {
         kicker="Atividade Principal"
         title="Aulas de Surf no Rio: Do Zero à Sua Melhor Onda"
         subtitle="Mais que um esporte, o surf é um ritual de conexão com o mar e o estilo de vida carioca. Nossa metodologia prioriza sua segurança, conforto e aprendizado prático desde o primeiro dia."
-        imageSrc="https://images.unsplash.com/photo-1502933691298-84fc14542831?auto=format&fit=crop&w=1800&q=80"
+        imageSrc="/images/aulas-de-surf.jpg"
         imageAlt="Pés sobre prancha de surf cortando onda azul-turquesa"
         ctaHref={getWhatsAppLink("Olá! Quero agendar uma aula de surf.")}
         ctaLabel="Agendar Minha Aula"

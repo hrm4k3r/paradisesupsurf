@@ -87,7 +87,7 @@ export default function HomePage() {
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-paradise-blue/30 to-paradise-orange/20 blur-2xl" />
             <div className="relative aspect-square max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl ring-8 ring-white bg-slate-900 animate-float">
               <Image
-                src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80"
+                src="/images/hero-surf.jpg"
                 alt="Surfista na onda ao entardecer no Rio"
                 fill
                 priority

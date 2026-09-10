@@ -17,7 +17,7 @@ export default function CachoeirasPage() {
         kicker="Água Doce & Renovação"
         title="Expedição Cachoeiras: Além das Praias"
         subtitle="Muita gente esquece que o Rio abriga uma das maiores florestas urbanas do mundo. Nossos tours de cachoeiras são o refúgio perfeito para recarregar as energias em poços de águas cristalinas."
-        imageSrc="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1800&q=80"
+        imageSrc="/images/expedicao-cachoeiras.jpg"
         imageAlt="Cachoeira cercada por floresta densa"
         badgeClass="bg-paradise-blue/90 text-white"
         ctaHref={getWhatsAppLink("Olá! Tenho interesse no tour de cachoeiras. Gostaria de saber os níveis e duração.")}
