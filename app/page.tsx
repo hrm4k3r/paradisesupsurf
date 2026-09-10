@@ -41,10 +41,10 @@ export default function HomePage() {
 
           <div className="lg:col-span-7 animate-fade-up">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-paradise-orange/10 text-paradise-orange text-xs font-black uppercase tracking-wider mb-6">
-              <SunMedium className="w-4 h-4 text-paradise-sun" /> Escola de Surf & Conexão no Rio
+              <SunMedium className="w-4 h-4 text-paradise-orange" /> Escola de Surf & Conexão no Rio
             </span>
             <h1 className="text-4xl sm:text-6xl font-black text-paradise-dark leading-tight tracking-tight text-balance">
-              Sinta a energia do mar e descubra o <span className="text-paradise-orange underline decoration-paradise-sun decoration-wavy decoration-2">estilo Paradise.</span>
+              Sinta a energia do mar e descubra o <span className="text-paradise-orange underline decoration-paradise-blue decoration-wavy decoration-2">estilo Paradise.</span>
             </h1>
             <p className="mt-6 text-lg text-slate-700 leading-relaxed max-w-xl">
               Aulas de surf desenhadas para iniciantes e quem quer evoluir no mar, além de vivências únicas no amanhecer, trilhas panorâmicas, cachoeiras e praias secretas.
@@ -84,7 +84,7 @@ export default function HomePage() {
           </div>
 
           <div className="lg:col-span-5 relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-paradise-sun/30 to-paradise-orange/20 blur-2xl" />
+            <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-paradise-blue/30 to-paradise-orange/20 blur-2xl" />
             <div className="relative aspect-square max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl ring-8 ring-white bg-slate-900 animate-float">
               <Image
                 src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80"
@@ -96,7 +96,7 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-paradise-dark/80 via-transparent to-transparent flex items-end p-8">
                 <div>
-                  <span className="text-paradise-sun text-xs font-black uppercase tracking-widest">Natureza & Diversão</span>
+                  <span className="text-paradise-orange text-xs font-black uppercase tracking-widest">Natureza & Diversão</span>
                   <p className="text-white text-lg font-bold mt-1">
                     &ldquo;O Rio visto de dentro da água tem uma energia indescritível.&rdquo;
                   </p>
@@ -214,7 +214,7 @@ export default function HomePage() {
             <Reveal delay={240}>
               <div className="p-8 rounded-2xl bg-slate-900 text-white flex flex-col justify-between h-full hover:shadow-xl hover:-translate-y-1 transition-all">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-paradise-sun text-paradise-dark flex items-center justify-center mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-paradise-blue text-white flex items-center justify-center mb-6">
                     <Sparkles className="w-6 h-6" />
                   </div>
                   <h3 className="font-extrabold text-xl mb-2">Evolução Técnica</h3>
@@ -222,7 +222,7 @@ export default function HomePage() {
                     Aperfeiçoe suas manobras, remada, posicionamento no pico e transição de prancha com análise do instrutor.
                   </p>
                 </div>
-                <Link href="/aulas-de-surf" className="mt-6 text-sm font-bold text-paradise-sun inline-flex items-center gap-1">
+                <Link href="/aulas-de-surf" className="mt-6 text-sm font-bold text-paradise-blue inline-flex items-center gap-1">
                   Ver evolução <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -286,7 +286,7 @@ export default function HomePage() {
             <Reveal delay={240}>
               <div className="bg-gradient-to-br from-paradise-orange to-paradise-orangeDark rounded-2xl p-7 text-white flex flex-col justify-between shadow-lg shadow-paradise-orange/20 h-full">
                 <div>
-                  <span className="text-xs text-paradise-sun font-black uppercase tracking-wider">Experiência VIP</span>
+                  <span className="text-xs text-white/70 font-black uppercase tracking-wider">Experiência VIP</span>
                   <h3 className="text-xl font-black mt-2 mb-2">Roteiro Completo no Rio</h3>
                   <p className="text-orange-50 text-sm leading-relaxed">
                     Combine surf ou SUP pela manhã e trilha ou cachoeira à tarde com logística organizada pela nossa equipe.
@@ -329,7 +329,7 @@ export default function HomePage() {
               <div className="pointer-events-none absolute -top-16 -left-16 w-72 h-72 rounded-full bg-paradise-orange/20 blur-3xl" />
               <div className="pointer-events-none absolute -bottom-16 -right-16 w-72 h-72 rounded-full bg-paradise-blue/20 blur-3xl" />
               <div className="relative">
-                <span className="text-paradise-sun text-xs font-black uppercase tracking-widest">Bora pro Mar?</span>
+                <span className="text-paradise-orange text-xs font-black uppercase tracking-widest">Bora pro Mar?</span>
                 <h2 className="text-3xl sm:text-5xl font-black text-white mt-3 max-w-2xl mx-auto text-balance">
                   Seu próximo dia inesquecível no Rio começa com uma mensagem.
                 </h2>

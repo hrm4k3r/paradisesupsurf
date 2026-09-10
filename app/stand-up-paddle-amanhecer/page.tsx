@@ -19,17 +19,17 @@ export default function SupAmanhecerPage() {
         subtitle="Uma experiência contemplativa pensada para desacelerar. O mar calmo como um espelho e os tons dourados do nascer do sol criam uma percepção única da cidade maravilhosa."
         imageSrc="https://images.unsplash.com/photo-1601283261983-543e77949437?auto=format&fit=crop&w=1800&q=80"
         imageAlt="Silhueta de pessoa em stand up paddle sobre água calma e dourada ao entardecer"
-        badgeClass="bg-paradise-sun/90 text-paradise-dark"
+        badgeClass="bg-paradise-orange/90 text-white"
         ctaHref={getWhatsAppLink("Olá! Quero saber as próximas datas e vagas para a remada de SUP ao amanhecer.")}
         ctaLabel="Reservar Meu Lugar"
-        ctaClass="bg-paradise-sun hover:bg-paradise-sunDark text-paradise-dark"
+        ctaClass="bg-paradise-orange hover:bg-paradise-orangeDark text-white"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
         <div className="grid md:grid-cols-3 gap-8">
           <Reveal delay={0}>
             <div className="bg-white p-8 rounded-2xl border border-slate-200 h-full hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center text-paradise-blue mb-6">
                 <Sunrise className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">O Mar em Estado Perfeito</h3>
@@ -65,10 +65,10 @@ export default function SupAmanhecerPage() {
         </div>
 
         <Reveal delay={120}>
-          <div className="mt-8 bg-gradient-to-br from-paradise-sun to-amber-400 text-paradise-dark rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="mt-8 bg-gradient-to-br from-paradise-orange to-paradise-orangeDark text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
               <h2 className="text-2xl sm:text-3xl font-black">Pronto para ver o Rio acordar?</h2>
-              <p className="mt-2 max-w-xl text-sm font-medium text-paradise-dark/80">
+              <p className="mt-2 max-w-xl text-sm font-medium text-orange-50">
                 Vagas limitadas por sessão para manter a tranquilidade da experiência. Equipamento completo incluso.
               </p>
             </div>

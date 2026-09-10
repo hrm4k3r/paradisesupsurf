@@ -47,10 +47,10 @@ export default function PraiasSecretasPage() {
         </div>
 
         <Reveal delay={120}>
-          <div className="mt-8 bg-gradient-to-r from-paradise-orange to-paradise-sun text-slate-950 rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="mt-8 bg-gradient-to-r from-paradise-orange to-paradise-orangeDark text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold">Viva o Rio dos moradores nativos</h2>
-              <p className="text-slate-900/80 text-sm mt-2 max-w-xl font-medium">
+              <p className="text-orange-50 text-sm mt-2 max-w-xl font-medium">
                 Vagas restritas para manter o impacto mínimo na natureza e o clima reservado da vivência.
               </p>
             </div>

@@ -110,7 +110,7 @@ export default function AulasDeSurfPage() {
         <Reveal>
           <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-paradise-sun text-paradise-dark flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-paradise-blue text-white flex items-center justify-center shrink-0">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
