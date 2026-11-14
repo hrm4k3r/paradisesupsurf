@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Mountain, Footprints } from 'lucide-react';
 import { getWhatsAppLink } from '@/data/experiences';
+import Gallery from '@/components/Gallery';
+import { GALLERIES } from '@/data/galleries';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
 
@@ -71,6 +73,7 @@ export default function TrilhasPage() {
           </div>
         </Reveal>
       </div>
+      <Gallery kicker="Galeria" title="Trilhas & Mirantes em Imagens" images={GALLERIES.trilhas} />
     </main>
   );
 }

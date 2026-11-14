@@ -19,6 +19,8 @@ import {
 import { getWhatsAppLink, EXPERIENCES } from '@/data/experiences';
 import Reveal from '@/components/Reveal';
 import Faq from '@/components/Faq';
+import Gallery from '@/components/Gallery';
+import { HOME_GALLERY } from '@/data/galleries';
 
 const EXPERIENCE_ICONS = {
   'aulas-de-surf': Waves,
@@ -270,6 +272,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Gallery kicker="Momentos Paradise" title="Veja Como É Viver o Rio com a Gente" images={HOME_GALLERY} />
 
       {/* FAQ */}
       <section className="py-24 bg-white border-t border-slate-100">

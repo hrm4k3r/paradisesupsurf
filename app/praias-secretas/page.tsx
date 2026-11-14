@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Compass, EyeOff } from 'lucide-react';
 import { getWhatsAppLink } from '@/data/experiences';
+import Gallery from '@/components/Gallery';
+import { GALLERIES } from '@/data/galleries';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
 
@@ -65,6 +67,7 @@ export default function PraiasSecretasPage() {
           </div>
         </Reveal>
       </div>
+      <Gallery kicker="Galeria" title="Praias Secretas em Imagens" images={GALLERIES.praias} />
     </main>
   );
 }
