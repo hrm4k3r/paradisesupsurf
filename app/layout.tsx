@@ -1,15 +1,21 @@
 import type { Metadata, Viewport } from 'next';
-import { Poppins } from 'next/font/google';
+import { Montserrat, Jost } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import { SITE_CONFIG } from '@/data/experiences';
 
-const poppins = Poppins({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
-  variable: '--font-poppins',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-montserrat',
+});
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-jost',
 });
 
 export const metadata: Metadata = {
@@ -35,7 +41,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#E85D36',
+  themeColor: '#2b2b2b',
 };
 
 export default function RootLayout({
@@ -44,10 +50,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={poppins.variable}>
-      <body className={`${poppins.className} antialiased bg-slate-50 text-slate-800`}>
+    <html lang="pt-BR" className={`${montserrat.variable} ${jost.variable}`}>
+      <body className={`font-sans antialiased bg-white text-[#333]`}>
         <Navbar />
-        <div className="pt-20">
+        <div className="pt-[calc(2.25rem+5rem)]">
           {children}
         </div>
         <Footer />

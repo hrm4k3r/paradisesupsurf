@@ -1,16 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paradise-orange: #E85D36;
-  --color-paradise-orangeDark: #D24823;
-  --color-paradise-orangeLight: #FFF4F0;
-  --color-paradise-blue: #0284C7;
-  --color-paradise-blueDark: #075985;
-  --color-paradise-forest: #0D9488;
-  --color-paradise-forestDark: #0F766E;
-  --color-paradise-rose: #E11D6F;
-  --color-paradise-roseDark: #BE185D;
-  --color-paradise-dark: #141416;
+  /* Paleta inspirada no surftech.com: branco, cinza-carvão e acento vermelho */
+  --color-paradise-orange: #333333;
+  --color-paradise-orangeDark: #000000;
+  --color-paradise-orangeLight: #F4F4F4;
+  --color-paradise-blue: #333333;
+  --color-paradise-blueDark: #000000;
+  --color-paradise-forest: #333333;
+  --color-paradise-forestDark: #000000;
+  --color-paradise-rose: #333333;
+  --color-paradise-roseDark: #000000;
+  --color-paradise-dark: #2b2b2b;
+  --color-paradise-red: #E3262E;
+
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jost), var(--font-montserrat), sans-serif;
+
+  /* Cantos retos, como no Surftech */
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-3xl: 0;
 
   --animate-fade-up: fade-up 0.7s ease-out both;
   --animate-float: float 5s ease-in-out infinite;
@@ -51,3 +63,29 @@ html {
     transform: translateY(0);
   }
 }
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.95rem 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.btn-light { background: #fff; color: #2b2b2b; }
+.btn-light:hover { background: #2b2b2b; color: #fff; }
+.btn-outline { border-color: #fff; color: #fff; }
+.btn-outline:hover { background: #fff; color: #2b2b2b; }
+.btn-dark { background: #2b2b2b; color: #fff; }
+.btn-dark:hover { background: #000; }

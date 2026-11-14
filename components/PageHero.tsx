@@ -8,10 +8,10 @@ export default function PageHero({
   subtitle,
   imageSrc,
   imageAlt,
-  badgeClass = "bg-paradise-orange/90 text-white",
+  badgeClass = "bg-white text-[#2b2b2b]",
   ctaHref,
   ctaLabel,
-  ctaClass = "bg-paradise-orange hover:bg-paradise-orangeDark text-white",
+  ctaClass = "",
 }: {
   kicker: string;
   title: string;
@@ -33,9 +33,8 @@ export default function PageHero({
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-paradise-dark via-paradise-dark/50 to-paradise-dark/10" />
-      <div className="absolute inset-0 bg-gradient-to-r from-paradise-dark/70 via-transparent to-transparent" />
-
+      <div className="absolute inset-0 bg-black/40" />
+      
       <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 flex flex-col justify-end pb-14">
         <Link
           href="/"
@@ -45,11 +44,11 @@ export default function PageHero({
         </Link>
 
         <span
-          className={`inline-flex w-fit items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider mb-5 ${badgeClass}`}
+          className={`inline-flex w-fit items-center gap-2 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-widest mb-5 ${badgeClass}`}
         >
           {kicker}
         </span>
-        <h1 className="text-4xl sm:text-6xl font-black text-white leading-[1.05] tracking-tight max-w-3xl text-balance">
+        <h1 className="text-4xl sm:text-6xl font-bold text-white leading-[1.05] max-w-3xl text-balance">
           {title}
         </h1>
         <p className="mt-5 text-base sm:text-lg text-white/85 leading-relaxed max-w-2xl">
@@ -60,7 +59,7 @@ export default function PageHero({
           href={ctaHref}
           target="_blank"
           rel="noopener noreferrer"
-          className={`mt-8 inline-flex w-fit items-center gap-2 px-7 py-3.5 rounded-xl font-bold shadow-xl transition active:scale-95 ${ctaClass}`}
+          className={`mt-8 btn btn-light w-fit`}
         >
           {ctaLabel} <ArrowUpRight className="w-4 h-4" />
         </a>
