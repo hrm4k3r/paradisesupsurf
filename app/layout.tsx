@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import WhatsAppTracker from '@/components/WhatsAppTracker';
 import { AnalyticsHead, AnalyticsNoScript } from '@/components/Analytics';
 import JsonLd from '@/lib/jsonld';
 import { SITE_CONFIG, EXPERIENCES } from '@/data/experiences';
@@ -106,6 +107,7 @@ export default function RootLayout({
         <WhatsAppFloat />
         <JsonLd data={businessJsonLd} />
         <AnalyticsHead />
+        <WhatsAppTracker />
       </body>
     </html>
   );
