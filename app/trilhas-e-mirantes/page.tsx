@@ -4,6 +4,8 @@ import { Mountain, Footprints } from 'lucide-react';
 import { getWhatsAppLink } from '@/data/experiences';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
+import TrailCard from '@/components/TrailCard';
+import { TRAILS } from '@/data/trilhas';
 
 export const metadata: Metadata = {
   title: 'Trilhas & Mirantes no Rio de Janeiro',
@@ -17,13 +19,29 @@ export default function TrilhasPage() {
         kicker="Mata Atlântica & Aventura"
         title="Trilhas Panorâmicas: O Rio Visto de Cima"
         subtitle="Uma combinação revigorante de atividade física, ar puro e a recompensa de chegar ao cume com vistas panorâmicas de 360° do oceano e da floresta."
-        imageSrc="/images/trilhas-e-mirantes.jpg"
-        imageAlt="Vista aérea da Baía de Guanabara e Pão de Açúcar no Rio de Janeiro"
+        imageSrc="/images/trilhas/pedra-da-gavea/01.jpg"
+        imageAlt="Trilheiro no topo da Pedra da Gávea com vista para o mar e a Pedra Dois Irmãos"
         badgeClass="bg-paradise-forest/90 text-white"
         ctaHref={getWhatsAppLink("Olá! Gostaria de consultar os roteiros e datas das trilhas no Rio.")}
         ctaLabel="Consultar Roteiro de Trilhas"
         ctaClass="bg-paradise-forest hover:bg-paradise-forestDark text-white"
       />
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-20">
+        <Reveal>
+          <div className="mb-10">
+            <span className="text-paradise-red font-bold uppercase tracking-widest text-[11px]">Nossas Trilhas</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-paradise-dark mt-1">Escolha Sua Montanha</h2>
+          </div>
+        </Reveal>
+        <div className="grid md:grid-cols-3 gap-6">
+          {TRAILS.map((trail, i) => (
+            <Reveal key={trail.slug} delay={i * 120} className="h-full">
+              <TrailCard trail={trail} />
+            </Reveal>
+          ))}
+        </div>
+      </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
         <div className="grid md:grid-cols-2 gap-8">
