@@ -21,6 +21,7 @@ export default function TrailCard({ trail }: { trail: Trail }) {
             src={trail.images[cover].src}
             alt={trail.images[cover].alt}
             fill
+            loading="eager"
             sizes="(max-width: 768px) 100vw, 33vw"
             className="object-cover group-hover:scale-105 transition-transform duration-500"
           />
