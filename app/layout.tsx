@@ -70,6 +70,7 @@ const businessJsonLd = {
       image: `${SITE_CONFIG.url}/images/og.jpg`,
       description: 'Escola de surf e stand up paddle com trilhas, cachoeiras, praias secretas e tour cultural no Rio de Janeiro.',
       telephone: `+${SITE_CONFIG.whatsappNumber}`,
+      sameAs: [SITE_CONFIG.instagram],
       address: { '@type': 'PostalAddress', addressLocality: 'Rio de Janeiro', addressRegion: 'RJ', addressCountry: 'BR' },
       areaServed: { '@type': 'City', name: 'Rio de Janeiro' },
       priceRange: 'R$$',

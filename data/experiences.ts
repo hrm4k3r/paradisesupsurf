@@ -3,6 +3,7 @@ export const SITE_CONFIG = {
   city: "Rio de Janeiro, RJ",
   whatsappNumber: "5521951008034",
   url: "https://www.paradisesupsurf.com.br",
+  instagram: "https://www.instagram.com/paradisesupsurf/",
 };
 
 export function getWhatsAppLink(message: string) {

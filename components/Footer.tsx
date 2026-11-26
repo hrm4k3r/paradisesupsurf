@@ -27,6 +27,14 @@ export default function Footer() {
               <MapPin className="w-4 h-4 text-white" />
               <span>{SITE_CONFIG.city}</span>
             </div>
+            <a
+              href={SITE_CONFIG.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-3 text-sm text-white/70 hover:text-white transition"
+            >
+              Instagram @paradisesupsurf
+            </a>
           </div>
 
           <div>
