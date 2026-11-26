@@ -4,7 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
-import Analytics from '@/components/Analytics';
+import { AnalyticsHead, AnalyticsNoScript } from '@/components/Analytics';
 import JsonLd from '@/lib/jsonld';
 import { SITE_CONFIG, EXPERIENCES } from '@/data/experiences';
 
@@ -97,6 +97,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${montserrat.variable} ${jost.variable}`}>
       <body className={`font-sans antialiased bg-white text-[#333]`}>
+        <AnalyticsNoScript />
         <Navbar />
         <div className="pt-[calc(2.25rem+5rem)]">
           {children}
@@ -104,7 +105,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppFloat />
         <JsonLd data={businessJsonLd} />
-        <Analytics />
+        <AnalyticsHead />
       </body>
     </html>
   );
