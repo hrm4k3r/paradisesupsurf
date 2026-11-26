@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { SITE_CONFIG, EXPERIENCES } from '@/data/experiences';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const now = new Date('2026-11-26');
 
   return [
     {

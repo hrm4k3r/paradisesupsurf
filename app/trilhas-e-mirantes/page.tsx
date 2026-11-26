@@ -6,15 +6,38 @@ import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
 import TrailCard from '@/components/TrailCard';
 import { TRAILS } from '@/data/trilhas';
+import JsonLd from '@/lib/jsonld';
+import { SITE_CONFIG } from '@/data/experiences';
 
 export const metadata: Metadata = {
   title: 'Trilhas & Mirantes no Rio de Janeiro',
   description: 'Trilhas panorâmicas na Mata Atlântica do Rio de Janeiro com guia credenciado, culminando em mirantes e picos icônicos.',
+  alternates: { canonical: '/trilhas-e-mirantes' },
+  openGraph: { url: '/trilhas-e-mirantes', locale: 'pt_BR', type: 'website', siteName: 'Paradise Sup&Surf', images: ['/images/og.jpg'] },
 };
 
 export default function TrilhasPage() {
   return (
     <main>
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'Trilhas guiadas no Rio de Janeiro',
+          itemListElement: TRAILS.map((t, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            item: {
+              '@type': 'Product',
+              name: `Trilha ${t.name}`,
+              description: `Trilha guiada ${t.difficulty.toLowerCase()} até a ${t.name}, no Rio de Janeiro.`,
+              image: `${SITE_CONFIG.url}${t.images[0].src}`,
+              brand: { '@type': 'Brand', name: 'Paradise Sup&Surf' },
+              offers: { '@type': 'Offer', priceCurrency: 'BRL', price: t.price.replace(/[^\d,]/g, '').replace(',', '.'), availability: 'https://schema.org/InStock', url: `${SITE_CONFIG.url}/trilhas-e-mirantes` },
+            },
+          })),
+        }}
+      />
       <PageHero
         kicker="Mata Atlântica & Aventura"
         title="Trilhas Panorâmicas: O Rio Visto de Cima"

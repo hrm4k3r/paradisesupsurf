@@ -8,6 +8,8 @@ import Reveal from '@/components/Reveal';
 export const metadata: Metadata = {
   title: 'Tour Cultural pela Comunidade no Rio',
   description: 'Tour cultural respeitoso e autêntico pela comunidade carioca: história, gastronomia, artistas locais e mirantes privilegiados.',
+  alternates: { canonical: '/tour-cultural-comunidade' },
+  openGraph: { url: '/tour-cultural-comunidade', locale: 'pt_BR', type: 'website', siteName: 'Paradise Sup&Surf', images: ['/images/og.jpg'] },
 };
 
 export default function TourCulturalPage() {

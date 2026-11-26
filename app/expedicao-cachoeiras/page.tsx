@@ -8,6 +8,8 @@ import Reveal from '@/components/Reveal';
 export const metadata: Metadata = {
   title: 'Expedição Cachoeiras no Rio de Janeiro',
   description: 'Tours guiados até cachoeiras e poços de água doce na Mata Atlântica do Rio de Janeiro, com níveis de acesso para todos os perfis.',
+  alternates: { canonical: '/expedicao-cachoeiras' },
+  openGraph: { url: '/expedicao-cachoeiras', locale: 'pt_BR', type: 'website', siteName: 'Paradise Sup&Surf', images: ['/images/og.jpg'] },
 };
 
 export default function CachoeirasPage() {

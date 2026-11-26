@@ -2,8 +2,7 @@ export const SITE_CONFIG = {
   name: "Paradise Sup&Surf",
   city: "Rio de Janeiro, RJ",
   whatsappNumber: "5521951008034",
-  // TODO: atualizar para o domínio real assim que o site for publicado
-  url: "https://paradisesupsurf.com.br",
+  url: "https://www.paradisesupsurf.com.br",
 };
 
 export function getWhatsAppLink(message: string) {

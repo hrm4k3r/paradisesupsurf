@@ -8,6 +8,8 @@ import Reveal from '@/components/Reveal';
 export const metadata: Metadata = {
   title: 'Aulas de Surf no Rio de Janeiro',
   description: 'Aulas de surf para iniciantes, turistas, grupos e evolução técnica no Rio de Janeiro. Equipamento incluso e instrutores qualificados.',
+  alternates: { canonical: '/aulas-de-surf' },
+  openGraph: { url: '/aulas-de-surf', locale: 'pt_BR', type: 'website', siteName: 'Paradise Sup&Surf', images: ['/images/og.jpg'] },
 };
 
 export default function AulasDeSurfPage() {

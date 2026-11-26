@@ -1,0 +1,15 @@
+# Paradise Sup&Surf
+
+> Escola de surf e stand up paddle no Rio de Janeiro (RJ), com experiências guiadas de natureza: trilhas, cachoeiras, praias secretas e tour cultural. Atendimento e reservas pelo WhatsApp +55 21 95100-8034. Site: https://www.paradisesupsurf.com.br
+
+## Experiências
+- [Aulas de Surf](https://www.paradisesupsurf.com.br/aulas-de-surf): aulas para iniciantes, turistas, grupos e evolução técnica, equipamento incluso.
+- [SUP no Amanhecer](https://www.paradisesupsurf.com.br/stand-up-paddle-amanhecer): remada de stand up paddle ao nascer do sol, mar calmo.
+- [Tour Cultural Comunitário](https://www.paradisesupsurf.com.br/tour-cultural-comunidade): história, arte, gastronomia e mirantes.
+- [Trilhas & Mirantes](https://www.paradisesupsurf.com.br/trilhas-e-mirantes): Pedra Bonita (moderada, R$ 180), Pedra Dois Irmãos (moderada, R$ 180), Pedra da Gávea (difícil, R$ 450).
+- [Expedição Cachoeiras](https://www.paradisesupsurf.com.br/expedicao-cachoeiras): poços de água doce na Mata Atlântica.
+- [Praias Secretas](https://www.paradisesupsurf.com.br/praias-secretas): enseadas fora do circuito turístico.
+
+## Informações úteis
+- Agendamento: exclusivamente via WhatsApp.
+- Local: Rio de Janeiro, RJ, Brasil. Idioma: português (pt-BR).

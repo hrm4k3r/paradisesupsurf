@@ -10,6 +10,8 @@ import Reveal from '@/components/Reveal';
 export const metadata: Metadata = {
   title: 'Stand Up Paddle no Amanhecer',
   description: 'Remada de Stand Up Paddle ao nascer do sol no Rio de Janeiro. Mar calmo, luz dourada e uma experiência contemplativa única.',
+  alternates: { canonical: '/stand-up-paddle-amanhecer' },
+  openGraph: { url: '/stand-up-paddle-amanhecer', locale: 'pt_BR', type: 'website', siteName: 'Paradise Sup&Surf', images: ['/images/og.jpg'] },
 };
 
 export default function SupAmanhecerPage() {

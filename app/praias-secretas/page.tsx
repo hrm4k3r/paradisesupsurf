@@ -8,6 +8,8 @@ import Reveal from '@/components/Reveal';
 export const metadata: Metadata = {
   title: 'Praias Secretas no Rio de Janeiro',
   description: 'Expedições até enseadas preservadas e praias reservadas do Rio de Janeiro, fora dos circuitos turísticos comerciais.',
+  alternates: { canonical: '/praias-secretas' },
+  openGraph: { url: '/praias-secretas', locale: 'pt_BR', type: 'website', siteName: 'Paradise Sup&Surf', images: ['/images/og.jpg'] },
 };
 
 export default function PraiasSecretasPage() {

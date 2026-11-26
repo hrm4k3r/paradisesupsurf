@@ -19,6 +19,8 @@ import {
 import { getWhatsAppLink, EXPERIENCES } from '@/data/experiences';
 import Reveal from '@/components/Reveal';
 import Faq from '@/components/Faq';
+import JsonLd from '@/lib/jsonld';
+import { FAQS } from '@/data/faq';
 import Gallery from '@/components/Gallery';
 import { HOME_GALLERY } from '@/data/galleries';
 
@@ -285,6 +287,7 @@ export default function HomePage() {
             </div>
           </Reveal>
           <Reveal delay={120}>
+            <JsonLd data={{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: FAQS.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }} />
             <Faq />
           </Reveal>
         </div>
