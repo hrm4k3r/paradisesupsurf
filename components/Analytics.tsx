@@ -1,7 +1,7 @@
 import Script from 'next/script';
 
 // Google Tag Manager. O GA4 e outras tags são configurados dentro do contêiner no painel do GTM.
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? 'GTM-NZPDBSGW';
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? 'GTM-PSCP4DT3';
 
 export function AnalyticsHead() {
   if (!GTM_ID) return null;
